@@ -1,0 +1,103 @@
+body {
+    background-color: gray ;
+}
+
+.table {
+    display: grid;
+    width: 550px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    height: 200px;
+    width: 130px;
+    margin: 15px;
+}
+
+.card:nth-child(17) {
+    position: relative;
+    left: 100%;
+}
+
+.card:nth-child(18) {
+    position: relative;
+    left: 100%;
+}
+
+#red {
+    color: red;
+}
+
+.card_bg {
+    height: 200px;
+    width: 130px;
+    background-image: url(../img/card_bg.png);
+    background-repeat: round;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+}
+
+.card_front {
+    height: 200px;
+    width: 130px;
+    position: relative;
+    background-color: whitesmoke;
+    top: -200px;
+    border-radius: 3%;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+    transform: rotateY(180deg);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_front span {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_front span:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card_front span:nth-child(2) {
+    text-align: center;
+    font-size: 90px;
+}
+
+.card_front span:nth-child(3) {
+    transform: rotate(180deg);
+    padding-left: 10px;
+}
+
+.card:hover .card_front {
+    transform: rotateY(360deg);
+}
+
+.card:hover .card_bg {
+    transform: rotateY(180deg);
+}
+
+div.vallet {
+    background-image: url(../img/vallet.png);
+    background-repeat: round;
+}
+
+div.joker {
+    background-image: url(../img/joker.png);
+    background-repeat: round;
+    font-size: 27px;
+}
+
+div.joker2 {
+    background-image: url(../img/joker2.png);
+    background-repeat: round;
+    font-size: 27px;
+}
+
+
